@@ -1,6 +1,7 @@
 # vestuario-backend
 
-Este projeto consta como requisito para Pós-graduação em Desenvolvimento FullStack PUC-RIO e consiste API Flask para gerenciamento de produtos de vestuário. A API permite realizar operações CRUD (Create, Read, Update, Delete) sobre produtos. Abaixo estão as instruções para configurar e executar o ambiente localmente como 
+Este projeto consta como requisito para Pós-graduação em Desenvolvimento FullStack PUC-RIO e consiste API Flask para gerenciamento de produtos de vestuário. A API permite realizar operações CRUD (Create, Read, Update, Delete) sobre produtos. Abaixo estão as instruções para configurar e executar o ambiente localmente.
+https://drive.google.com/file/d/17J9kJ9PPd8HxOPKvYv8tCpLyIfADy-M3/view
 
 ## Passo a passo para execução
 
