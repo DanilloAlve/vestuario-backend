@@ -1,57 +1,78 @@
-# vestuario-backend
+# Real Style Backend
 
-Este projeto em requisito para Pós-Graduação em Desenvolvimento FullStack PUC-RIO e consiste em uma API Flask para gerenciamento de produtos de vestuário. A API permite realizar operações CRUD (Create, Read, Update, Delete) sobre produtos. Abaixo estão as instruções para configurar e executar o ambiente localmente. 
+Este projeto faz parte do MVP da disciplina Sprint II: Desenvolvimento Back-end Avançado, pós-graduação PUC-Rio.
 
-https://drive.google.com/file/d/17J9kJ9PPd8HxOPKvYv8tCpLyIfADy-M3/view?usp=sharing
+O objetivo desta aplicação é desempenhar o controle e a visualização das funcionalidades disponibilizadas pela loja fictícia 
+chamada Real Style, a qual vende roupas e acessórios para os públicos masculino e feminino. É implementada uma API seguindo o padrão REST, 
+sendo permitido ao usuário consultar, adicionar, deletar ou editar produtos cadastrados no banco de dados (aplicação do conceito CRUD).
+Para a realização deste MVP, foi fixada, enquanto diretriz, a inclusão de um serviço consumido de uma API externa. Sendo assim, os dados 
+referentes aos produtos de vestuário (como imagens, títulos e preços) foram consumidos diretamente da https://fakestoreapi.com/.
 
-## Passo a passo para execução
+Principais tecnologias utilizadas:
+ - [Flask](https://flask.palletsprojects.com/en/2.3.x/)
+ - [SQLAlchemy](https://www.sqlalchemy.org/)
+ - [OpenAPI3](https://swagger.io/specification/)
+ - [SQLite](https://www.sqlite.org/index.html)
 
-### 1. Clone o repositório
+Diagrama da arquitetura da aplicação e estratégias de comunicação implementadas: https://1drv.ms/i/s!AvTc9X8DiWmVj_MvyWRtPXuzk9SUHA?e=R1WWPD
 
-git clone https://github.com/seu-usuario/dani-modas-backend.git
 
-### 2. Crie um ambiente virtual 
-Se você quiser isolar as dependências do projeto, use o virtualenv para criar um ambiente virtual:
 
+## Como executar
+
+
+### Passo 1: Criando um ambiente virtual
+
+Após clonar o repositório, abra um novo terminal e digite o seguinte comando:
+```
 python -m venv venv
+```
+> Este comando cria um novo ambiente virtual usando o módulo "venv" do Python.
 
-### 3. Ative o ambiente virtual
+Ative o ambiente virtual digitando o seguinte comando:
+```
+.\venv\Scripts\Activate.ps1   
+```
 
-venv\Scripts\activate
+---
+### Passo 2: Executando a API
 
-### 4. Instale as dependências
-Com o ambiente virtual ativado, instale todas as dependências listadas no arquivo requirements.txt:
+Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
+Após clonar o repositório e ativar o ambiente virtual (veja o passo 1), é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
+```
+(venv) pip install -r requirements.txt
+```
+> Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-pip install -r requirements.txt
+Para executar a API, basta executar:
+```
+(venv) flask run --host 0.0.0.0 --port 5000
+```
 
-### 5. Execute a aplicação
-Agora que tudo está configurado, você pode executar o backend usando o comando:
+Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor automaticamente após uma mudança no código fonte. 
+```
+(venv) flask run --host 0.0.0.0 --port 5000 --reload
+```
 
-flask run --host=0.0.0.0 --port=5000
-A API estará disponível no endereço:
+> Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
 
-http://localhost:5000
 
-### 6. Acesse a documentação da API
-A API utiliza Swagger para documentar todas as rotas disponíveis. A documentação pode ser acessada em:
+---
+## Como executar através do Docker
 
-http://localhost:5000/openapi
+Certifique-se de ter o [Docker](https://docs.docker.com/engine/install/) instalado e em execução em sua máquina.
 
-### Executando com Docker
-Para rodar o backend usando Docker, siga os passos abaixo:
+Navegue até o diretório que contém o Dockerfile e o requirements.txt no terminal.
+Execute **como administrador** o seguinte comando para construir a imagem Docker:
 
-### 1. Construir a imagem Docker
-Na raiz do projeto, onde o arquivo Dockerfile está localizado, execute o seguinte comando para construir a imagem Docker:
+```
+$ docker build -t nome_da_sua_imagem .
+```
 
-docker build -t dani-modas-backend .
+Uma vez criada a imagem, para executar o container basta executar, **como administrador**, o seguinte comando:
 
-### 2. Executar o container
-Após a imagem ser construída, você pode rodar a aplicação em um container Docker com o seguinte comando:
+```
+$ docker run -p 5000:5000 nome_da_sua_imagem
+```
 
-docker run -d -p 5000:5000 dani-modas-backend
-http://localhost:5000
-
-### 3. Verificar o status do container
-Para garantir que o container está rodando corretamente, você pode listar os containers ativos com:
-
-docker ps
+Uma vez executando, para acessar a API, basta abrir o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador.
