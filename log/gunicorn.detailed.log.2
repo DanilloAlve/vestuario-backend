@@ -1,0 +1,115 @@
+[2024-09-29 18:51:51,007] ERROR log_exception() L1454 Exception on /produto [GET] - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py L1454
+Traceback (most recent call last):
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py", line 84, in buscar_produto
+    logger.debug(f"Buscando informações do produto '{nome_produto}'...")
+              ^^^^^^^
+NameError: name 'Session' is not defined. Did you mean: 'DBSession'?
+[2024-09-29 18:51:51,036] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:51:51] "[35m[1mGET /produto?nome= HTTP/1.1[0m" 500 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:51:52,542] DEBUG buscar_produto() L83   Buscando informações do produto 'A'... - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py L83  
+[2024-09-29 18:51:52,542] ERROR log_exception() L1454 Exception on /produto [GET] - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py L1454
+Traceback (most recent call last):
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py", line 84, in buscar_produto
+    logger.debug(f"Buscando informações do produto '{nome_produto}'...")
+              ^^^^^^^
+NameError: name 'Session' is not defined. Did you mean: 'DBSession'?
+[2024-09-29 18:51:52,558] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:51:52] "[35m[1mGET /produto?nome=A HTTP/1.1[0m" 500 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:51:53,447] DEBUG buscar_produto() L83   Buscando informações do produto 'A'... - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py L83  
+[2024-09-29 18:51:53,447] ERROR log_exception() L1454 Exception on /produto [GET] - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py L1454
+Traceback (most recent call last):
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py", line 84, in buscar_produto
+    logger.debug(f"Buscando informações do produto '{nome_produto}'...")
+              ^^^^^^^
+NameError: name 'Session' is not defined. Did you mean: 'DBSession'?
+[2024-09-29 18:51:53,484] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:51:53] "[35m[1mGET /produto?nome=A HTTP/1.1[0m" 500 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:51:53,697] DEBUG buscar_produto() L83   Buscando informações do produto 'A'... - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py L83  
+[2024-09-29 18:51:53,697] ERROR log_exception() L1454 Exception on /produto [GET] - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py L1454
+Traceback (most recent call last):
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\app.py", line 84, in buscar_produto
+    logger.debug(f"Buscando informações do produto '{nome_produto}'...")
+              ^^^^^^^
+NameError: name 'Session' is not defined. Did you mean: 'DBSession'?
+[2024-09-29 18:51:53,711] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:51:53] "[35m[1mGET /produto?nome=A HTTP/1.1[0m" 500 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 

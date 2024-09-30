@@ -1,0 +1,55 @@
+[2024-09-29 16:00:28,617] WARNING _log() L225   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:00:28,634] INFO _log() L225   * Running on http://192.168.100.10:5000/ (Press CTRL+C to quit) - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:00,465] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:00] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:00,599] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:00] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:00,847] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:00] "GET /openapi/static/images/swagger.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:00,949] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:00] "GET /openapi/static/images/redoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:00,963] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:00] "GET /openapi/static/images/rapidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:01,023] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:01] "GET /openapi/static/images/apidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:02,783] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:02] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:02,849] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:02] "GET /openapi/static/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:03,040] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:03] "GET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:03,183] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:03] "GET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 16:01:03,799] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 16:01:03] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:41:09,804] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:41:09] "OPTIONS /produto HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:41:10,038] ERROR log_exception() L1454 Exception on /produto [POST] - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py L1454
+Traceback (most recent call last):
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: criar_produto() missing 1 required positional argument: 'formulario'
+[2024-09-29 18:41:10,067] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:41:10] "[35m[1mPOST /produto HTTP/1.1[0m" 500 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:11,128] WARNING _log() L225   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:11,128] INFO _log() L225   * Running on http://192.168.100.10:5000/ (Press CTRL+C to quit) - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:26,955] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:26] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:27,011] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:27] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:27,373] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:27] "GET /openapi/static/images/redoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:27,375] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:27] "GET /openapi/static/images/swagger.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:27,382] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:27] "GET /openapi/static/images/rapidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:27,429] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:27] "GET /openapi/static/images/apidoc.svg HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:28,479] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:28] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:28,542] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:28] "GET /openapi/static/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:28,559] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:28] "GET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:28,583] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:28] "GET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:29,002] INFO _log() L225  192.168.100.10 - - [29/Sep/2024 18:43:29] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2024-09-29 18:43:45,986] INFO _log() L225  127.0.0.1 - - [29/Sep/2024 18:43:45] "OPTIONS /produto HTTP/1.1" 200 - - call_trace=C:\Users\danil\Desktop\dani-modass\dani-modas-backend\venv\Lib\site-packages\werkzeug\_internal.py L225 
